@@ -19,6 +19,25 @@
         --h5: calc(var(--h6) * var(--scale));
         --h6: var(--base-size);
     }
+
+    html {
+        box-sizing: border-box;
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+    
+    .sr-only:not(:focus):not(:active) {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
     
     body {
         font-family: var(--main);
@@ -77,47 +96,38 @@
         margin: 0;
         padding: 0;
     }
-    
-    .white {
-        background-color: var(--white);
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
     
     .black {
         background-color: var(--black);
     }
-    
-    .tan {
-        background-color: var(--tan);
+
+    .white {
+        background-color: var(--white);
     }
     
-    .green {
-        background-color: var(--green);
+    .palatinate-blue {
+        background-color: var(--palatinate-blue);
     }
     
-    .lightgreen {
-        background-color: var(--lightgreen);
+    .neon-blue {
+        background-color: var(--neon-blue);
     }
     
-    .red {
-        background-color: var(--red);
+    .cool-gray {
+        background-color: var(--cool-gray);
     }
     
-    html {
-        box-sizing: border-box;
+    .eerie-black {
+        background-color: var(--eerie-black);
     }
-    *,
-    *::before,
-    *::after {
-        box-sizing: inherit;
-    }
-    
-    .sr-only:not(:focus):not(:active) {
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        height: 1px;
-        overflow: hidden;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
+
+    .dark-eerie-black {
+        background-color: var(--dark-eerie-black);
     }
 }
