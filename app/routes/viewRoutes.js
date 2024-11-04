@@ -30,6 +30,10 @@ router.get('/profile', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/user/profile.html'));
 });
 
+router.get('/edit-profile', (req, res) => {
+    res.sendFile(path.join(__dirname, '../views/user/edit-profile.html'));
+});
+
 router.get('/my-posts', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/post/my-posts.html'));
 });
