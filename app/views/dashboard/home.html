@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="/public/css/styles.css">
 </head>
 <body>
-    <h1>Home</h1>
+    <main class="container">
+        <header class="navbar">
+            <h1 class="brand">
+                <p>Social Media</p>
+            </h1>
+            <nav>
+                <button class="menu-toggle" aria-label="Expand menu">&#9662;</button>
+                <ul class="menu">
+                    <li><a href="/profile" aria-label="View profile">View Profile</a></li>
+                    <li><a href="/my-posts" aria-label="View my posts">My Posts</a></li>
+                    <li><a href="/logout" aria-label="Sign out">Sign out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="create-post">
+            <textarea name="create-post" id="post" placeholder="Write your post..."></textarea>
+            <div class="action-buttons">
+                <button type="button" class="upload-button" id="upload-button">Add image</button>
+                <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;">
+                <button class="register-button" type="submit">Post</button>
+            </div>
+        </section>
+    </main>
     <script src="/public/js/script.js"></script>
 </body>
 </html>
