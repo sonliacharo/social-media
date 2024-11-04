@@ -1,0 +1,123 @@
+@layer base {
+    :root {
+        --black: #000501;
+        --white: #FFFFFF;
+        --palatinate-blue: #563ACC;
+        --neon-blue: #563ACC;
+        --cool-gray: #9C9CC9;
+        --eerie-black: #212121;
+        --dark-eerie-black: #1C1C1C;
+        --main: "Roboto", sans-serif;
+        --heading: "Montserrat", sans-serif;
+        --mono: "Roboto Mono", monospace;
+        --base-size: 1rem;
+        --scale: 1.2;
+        --h1: calc(var(--h2) * var(--scale));
+        --h2: calc(var(--h3) * var(--scale));
+        --h3: calc(var(--h4) * var(--scale));
+        --h4: calc(var(--h5) * var(--scale));
+        --h5: calc(var(--h6) * var(--scale));
+        --h6: var(--base-size);
+    }
+    
+    body {
+        font-family: var(--main);
+        margin: 0;
+        padding: 0;
+        font-size: var(--base-size);
+        line-height: 1.5;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--heading);
+    }
+    
+    .mono {
+        font-family: var(--mono);
+    }
+    
+    h1 {
+        font-size: var(--h1);
+    }
+    
+    h2 {
+        font-size: var(--h2);
+    }
+    
+    h3 {
+        font-size: var(--h3);
+    }
+    
+    h4 {
+        font-size: var(--h4);
+    }
+    
+    h5 {
+        font-size: var(--h5);
+    }
+    
+    h6 {
+        font-size: var(--h6);
+    }
+    
+    a {
+        color: var(--cool-gray);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .white {
+        background-color: var(--white);
+    }
+    
+    .black {
+        background-color: var(--black);
+    }
+    
+    .tan {
+        background-color: var(--tan);
+    }
+    
+    .green {
+        background-color: var(--green);
+    }
+    
+    .lightgreen {
+        background-color: var(--lightgreen);
+    }
+    
+    .red {
+        background-color: var(--red);
+    }
+    
+    html {
+        box-sizing: border-box;
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+    
+    .sr-only:not(:focus):not(:active) {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+}
