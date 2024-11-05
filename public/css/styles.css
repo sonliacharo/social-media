@@ -282,13 +282,12 @@
         margin-bottom: 20px;
     }
 
-    .text-container {
+    .confirmation-brand {
         text-align: center;
-        margin: 0;
-        padding: 0;
     }
 
     .confirmation-description {
+        text-align: center;
         max-width: 600px;
         margin: 0;
         padding: 1rem 0 2rem 0;
@@ -300,5 +299,112 @@
 
     .login-btn:hover {
         text-decoration: none;
+    }
+}
+
+@layer home {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    nav {
+        font-family: var(--heading);
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .create-post {
+        padding: 0 1rem 0 1rem;
+        border: 1px solid var(--cool-gray);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .post-list {
+        border: 1px solid var(--cool-gray);
+        border-bottom: none;
+        min-height: 100vh;
+    }
+
+    .create-post-box {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 15px;
+        box-sizing: border-box;
+        background-color: var(--dark-eerie-black);
+        border: none;
+        font-size: var(--base-size);
+        font-weight: 600;
+        color: var(--white);
+        resize: none;
+    }
+
+    .create-post-box:focus {
+        outline: none;
+        border-bottom: 1px solid var(--cool-gray);
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post-button {
+        padding: 0 1.5rem 0 1.5rem;
+        background-color: var(--neon-blue);
+        color: var(--white);
+        font-size: var(--base-size);
+        font-weight: bold;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        margin: 0.75rem;
+    }
+
+    .post-button:hover {
+        background-color: var(--palatinate-blue);
+    }
+
+    .create-post svg {
+        width: 30px;
+        fill: var(--neon-blue);
+        margin: 0.75rem;
+    }
+
+    .create-post label:hover svg {
+        fill: var(--palatinate-blue);
+        cursor: pointer;
+    }
+
+    .section-title {
+        text-align: center;
+        padding: 0 1rem 2rem 1rem;
+        border-bottom: 1px solid var(--cool-gray);
+    }
+
+    .post-item {
+        padding: 0 1rem 2rem 1rem;
+        border-bottom: 1px solid var(--cool-gray);
     }
 }
