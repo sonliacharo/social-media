@@ -10,33 +10,33 @@
     <link rel="stylesheet" href="/public/css/styles.css">
 </head>
 <body>
-    <main class="container">
-        <div class="initial-page-container">
+    <main class="container login-page">
+        <div class="login-page-container">
             <div class="text-container">
-                <h1 class="brand"><a href='/' aria-label="Go to initial page">The Social Media</a></h1>
+                <h1 class="brand login-brand"><a href='/' aria-label="Go to initial page">The Social Media</a></h1>
             </div>
-        </div>
-        <div class="form-container">
-            <form class="login-form" aria-labelledby="login-heading">
-                <div>
-                    <div class="input-field">
-                        <input id="email" class="input-text" type="email" placeholder="Email">
+            <div class="form-container">
+                <form class="login-form" aria-labelledby="login-heading">
+                    <div>
+                        <div class="input-field">
+                            <input id="email" class="input-text" type="email" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <input id="password" class="input-text" type="password" placeholder="Password">
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <input id="password" class="input-text" type="password" placeholder="Password">
+                    <div class="button-container">
+                        <button class="button" type="submit">Sign in</button>
                     </div>
+                </form>
+                <div class="link-container">
+                    <p>New to Social Media? <a class="register-link" href='/register' aria-label="Create an account">Sign up</a></p>
                 </div>
-                <div class="login__button-container">
-                    <button class="login-button" type="submit">Sign in</button>
-                </div>
-            </form>
-            <div class="register__link-container">
-                <p>New to Social Media? <a class="register-link" href='/register' aria-label="Create an account">Sign up</a></p>
             </div>
         </div>
         <footer class="footer">
             <div class="footer-content">
-                <p>&copy; 2024 The Social Media. All rights reserved.</p>
+                <p><small>&copy; 2024 The Social Media. All rights reserved.</small></p>
             </div>
         </footer>
     </main>
