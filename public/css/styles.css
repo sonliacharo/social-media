@@ -139,34 +139,9 @@
     .dark-eerie-black {
         background-color: var(--dark-eerie-black);
     }
-}
-
-@layer initial-page {
-    .initial-page {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 
     .brand {
         margin: 0;
-    }
-
-    .description {
-        max-width: 400px;
-        line-height: 1.5;
-        font-weight: 500;
-        color: var(--cool-gray);
-    }
-    
-
-    .page-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 8rem 0;
-        margin-top: auto;
-        margin-bottom: 20px;
     }
 
     .form-container {
@@ -191,12 +166,12 @@
         color: var(--black);
     }
 
-    .login__button-container {
+    .button-container {
         width: 100%;
         display: flex;
     }
 
-    .login-button {
+    .button {
         width: 100%;
         padding: 0.75rem;
         background-color: var(--neon-blue);
@@ -208,11 +183,11 @@
         cursor: pointer;
     }
 
-    .login-button:hover {
+    .button:hover {
         background-color: var(--palatinate-blue);
     }
 
-    .register__link-container {
+    .link-container {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -221,5 +196,55 @@
     .footer {
         text-align: center;
         margin-top: auto;
+    }
+}
+
+@layer initial-page {
+    .initial-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description {
+        max-width: 400px;
+        line-height: 1.5;
+        font-weight: 500;
+        color: var(--cool-gray);
+    }
+
+    .initial-page-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8rem 0;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+@layer register {
+    .register-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .register-page-container {
+        padding: 6rem 24rem 8rem 24rem;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+
+    .register-brand {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;   
+    }
+
+    h1 a {
+        color: var(--white);
+        text-decoration: none;
     }
 }
