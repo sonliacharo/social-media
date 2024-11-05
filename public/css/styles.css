@@ -268,3 +268,37 @@
         margin-bottom: 20px; 
     }
 }
+
+@layer confirmation{
+    .confirmation-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .confirmation-page-container {
+        padding: 6rem 20rem 8rem 20rem;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+
+    .text-container {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .confirmation-description {
+        max-width: 600px;
+        margin: 0;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .login-btn {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .login-btn:hover {
+        text-decoration: none;
+    }
+}
