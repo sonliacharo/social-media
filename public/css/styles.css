@@ -144,6 +144,11 @@
         margin: 0;
     }
 
+    h1.brand a {
+        color: var(--white);
+        text-decoration: none;
+    }
+
     .form-container {
         background-color: var(--eerie-black);
         padding: 2rem 2rem 0.65rem 2rem;
@@ -191,6 +196,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-top: 5px;
     }
 
     .footer {
@@ -221,7 +227,6 @@
         margin-top: auto;
         margin-bottom: 20px;
     }
-
 }
 
 @layer register {
@@ -242,9 +247,24 @@
         justify-content: center;
         margin-bottom: 20px;   
     }
+}
 
-    h1 a {
-        color: var(--white);
-        text-decoration: none;
+@layer login {
+    .login-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-page-container {
+        padding: 6rem 24rem 8rem 24rem;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+
+    .login-brand {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; 
     }
 }
